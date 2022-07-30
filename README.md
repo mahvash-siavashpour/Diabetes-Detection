@@ -66,4 +66,4 @@ max_depth_list = [2, 3, 4]
 n_estimators_list = [100, 200, 300] 
 colsample_bytree = [0.8, 1]
 ```
-
+The results obtained and all the details are available in the notebook.
