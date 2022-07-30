@@ -33,12 +33,12 @@ The data used in this project is the information of more than 70,000 patients th
 - Income
 ## Preprocessing
 Before doing any training, a series of preprocessing has been done on the data. 
-1. NULL Values: 
+1. NULL Values: <br>
   First I found all null values and then replace them by either the mean(numerical) or the mode(categorical and binary) of that column.
   By doing so we can keep and refine the dataset with out removing any data.
-2. Unifying White spaces: 
+2. Unifying White spaces: <br>
   After finding all white spaces in the column names of data, I replaced them with a "-" making the names Kebab Case.
-3. Normalizing:
+3. Normalizing:<br>
 4. Categorical Features:
 ## XGBoost Model
 
