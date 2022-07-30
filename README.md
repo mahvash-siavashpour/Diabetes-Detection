@@ -36,13 +36,27 @@ Before doing any training, a series of preprocessing has been done on the data.
 1. **NULL Values:** <br>
   First I found all null values and then replace them by either the mean(numerical) or the mode(categorical and binary) of that column.
   By doing so we can keep and refine the dataset with out removing any data.
-2. **Unifying White spaces:** <br>
+2. **Unifying White Spaces:** <br>
   After finding all white spaces in the column names of data, I replaced them with a "-" making the names Kebab Case.
 3. **Normalizing:**<br>
   Different feature have different ranges of values. Scaling them into a specific range helps a lot with in the training of the model.
 5. **Categorical Features:**>br>
   Some features are categorical and for us to be able to use them in numerical formats I changed them into numerical vectors using one-hot-encoding.
 ## XGBoost Model
+XGBoost is an open-source software library which provides a regularizing gradient boosting framework for C++, Java, Python, R, Julia, Perl, and Scala. It works on Linux, Windows, and macOS. From the project description, it aims to provide a "Scalable, Portable and Distributed Gradient Boosting Library".([Wikipedia](https://en.wikipedia.org/wiki/XGBoost)) <br>
+In this phase of the project I created an XGBClassifier with the parameters specified bellow: <br>
+```
+model = XGBClassifier(
+            tree_method='gpu_hist',
+            Learning_rate=0.1,
+            Max_depth=4,
+            N_estimator=200,
+            Subsample=0.5,
+            Colsample_bytree=1,
+            Random_seed=123,
+            Eval_metric='auc',
+            Verbosity=1)
+```
 
 ## Hyperparameter Tuninning
 
