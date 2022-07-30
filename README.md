@@ -57,6 +57,13 @@ model = XGBClassifier(
             Eval_metric='auc',
             Verbosity=1)
 ```
-
+And then trained the model. The results after the training are available in the notebook.
 ## Hyperparameter Tuninning
+There are many parameters that can affect the model. In order to find the best parameters for our model we use GridSearchCV to do a cross-validation constructiong the model with different combinations of the parameters and then scoring them. The candidate lists of the parameters are shown bellow:
+```
+learning_rate_list = [0.02, 0.05, 0.1, 0.3] 
+max_depth_list = [2, 3, 4] 
+n_estimators_list = [100, 200, 300] 
+colsample_bytree = [0.8, 1]
+```
 
