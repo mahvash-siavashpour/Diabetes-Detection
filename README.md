@@ -38,7 +38,7 @@ Before doing any training, a series of preprocessing has been done on the data.
   By doing so we can keep and refine the dataset with out removing any data.
 2. **Unifying White Spaces:** <br>
   After finding all white spaces in the column names of data, I replaced them with a "-" making the names Kebab Case.
-3. **Normalizing:**<br>
+3. **Normalizing:** <br>
   Different feature have different ranges of values. Scaling them into a specific range helps a lot with in the training of the model.
 5. **Categorical Features:**>br>
   Some features are categorical and for us to be able to use them in numerical formats I changed them into numerical vectors using one-hot-encoding.
