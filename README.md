@@ -40,7 +40,7 @@ Before doing any training, a series of preprocessing has been done on the data.
   After finding all white spaces in the column names of data, I replaced them with a "-" making the names Kebab Case.
 3. **Normalizing:** <br>
   Different feature have different ranges of values. Scaling them into a specific range helps a lot with in the training of the model.
-5. **Categorical Features:**>br>
+5. **Categorical Features:** <br>
   Some features are categorical and for us to be able to use them in numerical formats I changed them into numerical vectors using one-hot-encoding.
 ## XGBoost Model
 XGBoost is an open-source software library which provides a regularizing gradient boosting framework for C++, Java, Python, R, Julia, Perl, and Scala. It works on Linux, Windows, and macOS. From the project description, it aims to provide a "Scalable, Portable and Distributed Gradient Boosting Library".([Wikipedia](https://en.wikipedia.org/wiki/XGBoost)) <br>
